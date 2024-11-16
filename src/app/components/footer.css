@@ -1,0 +1,99 @@
+.footer{
+    background-color: rgb(99, 56, 134);
+    padding: 3rem 0;
+}
+.footer-cont{
+    padding: 0 6%;
+    margin: auto;
+}
+.flex-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.partition{
+    display: grid;
+    grid-template-columns: 1fr ;
+    align-items: center;
+    justify-content: center;
+}
+.part h3{
+    font-size: 2rem;
+    font-weight: bold;
+    background-image: linear-gradient(purple, pink,purple);
+    background-clip: text;
+    -webkit-background-clip: text; /* Ensures support in WebKit browsers */
+    color: transparent;
+}
+.part p{
+    color: rgb(160, 159, 159);
+}
+.part1 form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.part1 form button{
+    color: white;
+    background: linear-gradient(pink,purple);
+    padding: 8px 30px;
+    /* border-radius: 5px; */
+    transition: all .5s ease-in;
+}
+.part1 form button:hover{
+    transform: scale(1.1);
+}
+.part1 form input{
+    width: 100%;
+    /* padding-top: 7px;
+    padding-bottom: 5px; */
+    padding: 8px;
+    outline: none;
+}
+.bordertop{
+    border-top:  1px solid white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+.bordertop p{
+    color: rgb(160, 159, 159);
+}
+.social{
+    display: flex;
+    gap: 10px;
+}
+.social1{
+    color: rgb(221, 147, 172);
+}
+.social1:hover{
+    color: rgb(236, 14, 136);
+}
+.privacy{
+    display: flex;
+    gap: 15px;
+}
+.privacy a{
+    color: rgb(160, 159, 159);
+}
+.privacy a:hover{
+    color: rgb(97, 95, 95);
+}
+
+
+
+@media (min-width: 730px){
+    .flex-footer{
+        flex-direction: row;
+    }
+    .bordertop{
+        flex-direction: row;
+    }
+    .partition{
+        grid-template-columns: 1fr 1fr;
+    }
+}

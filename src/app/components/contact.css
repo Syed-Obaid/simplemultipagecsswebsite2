@@ -1,0 +1,102 @@
+.contact{
+    background-color: rgb(203, 193, 235);
+    margin: 10px 0;
+    padding-top: 1.2rem;
+    padding-bottom: 2rem;
+}
+.contact-cont{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    font-weight: 600;
+    color: rgb(99, 56, 134);
+}
+.grid-contact{
+    display: grid;
+    grid-template-columns: 1fr ;
+}
+.flex-contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cnt1{
+    max-width: 70%;
+}
+.cnt2{
+    max-width: 80%;
+    margin: auto;
+}
+.cnt1 h1{
+    font-weight: bold;
+    font-size: 1.8rem;
+    background-image: linear-gradient(pink, purple,pink);
+    background-clip: text;
+    -webkit-background-clip: text; /* Ensures support in WebKit browsers */
+    color: transparent;
+}
+.cnt1 p{
+    padding-bottom: 15px;
+}
+.contact12{
+    padding-bottom: 8px;
+}
+.contact12 .email{
+ display: inline-block;
+ margin-right: 5px;
+ color: blueviolet;
+
+}
+
+.mailline:hover{
+  text-decoration: underline;
+}
+form{
+    padding: 7% 0;
+   
+   
+}
+.block1{
+    display: block;
+    margin: 10px 0;
+}
+input{
+    width: 100%;
+    background-color: rgb(90, 105, 243);
+    padding: 8px;
+    border-radius: 8px;
+    outline: none;
+    border: 1px solid gray;
+}
+textarea{
+    width: 100%;
+    background-color: rgb(90, 105, 243);
+    padding: 8px;
+    border-radius: 8px;
+    outline: none;
+    border: 1px solid gray;
+}
+input::placeholder , textarea::placeholder{
+    color: white;
+}
+form button{
+    color: white;
+    background: linear-gradient(pink,purple);
+    margin-top: 6px;
+    padding: 10px 30px;
+    border-radius: 5px;
+    transition: all .5s ease-in;
+}
+form button:hover{
+    transform: scale(1.1);
+}
+
+@media (min-width: 768px){
+    .grid-contact{
+        grid-template-columns: 1fr 1fr;
+    }
+    .cnt2{
+        margin: 0;
+    }
+   }

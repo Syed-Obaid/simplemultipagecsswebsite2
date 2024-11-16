@@ -1,0 +1,68 @@
+nav{
+    background-color: rgb(99, 56, 134);
+}
+.navbar{
+    max-width: 1280px;
+    margin: auto;
+    padding: 0 10px;
+}
+.navbar-main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 4rem;
+}
+.nav-items{
+    margin-left: 4px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: white;
+}
+.nav-items .items:hover{
+    background-image: linear-gradient(rgb(199, 132, 143), rgb(216, 80, 216),rgb(207, 140, 151));
+    background-clip: text;
+    -webkit-background-clip: text; /* Ensures support in WebKit browsers */
+    color: transparent;
+}
+.btn{
+    display: flex;
+    align-items: center;
+}
+.btn button{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    
+}
+.btn button:hover{
+    outline: 1px solid white;
+}
+.btn button svg{
+    height: 25px;
+}
+.hide-div{
+    padding: 8px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+}
+.hidden1{
+    display: none;
+}
+@media (min-width: 768px) {
+    .hidden1{
+        display: block;
+    }
+    .btn{
+        display: none;
+    }
+    .mobile{
+        display: none;
+    }
+
+}
